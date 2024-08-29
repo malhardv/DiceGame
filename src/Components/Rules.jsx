@@ -28,4 +28,5 @@ const RuleBook = styled.div`
     margin: 0 auto;
     padding: 20px;
     margin-top: 40px;
+    border-radius: 15px;
 `
