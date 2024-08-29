@@ -59,7 +59,9 @@ const GamePlay = () => {
                 ></RollDice>
             </div>
             <div className='buttons'>
-                <Button>Reset Score</Button>
+                <Button
+                onClick={() => setScore(0)}
+                >Reset Score</Button>
                 <CustomButton
                 onClick={() => setShowRules((prev) => !prev)}
                 >{showRules ? "Hide" : "Show"} Rules</CustomButton>
