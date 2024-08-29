@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-const NumberSelector = ({ error, selectedNumber, setSelectedNumber }) => {
+const NumberSelector = ({ setError, error, selectedNumber, setSelectedNumber }) => {
 
     const arr = [1, 2, 3, 4, 5, 6];
 
     const numberSelectorHandler = (value) => {
         setSelectedNumber(value);
         console.log(value);
+        setError("");
     }
 
     return (

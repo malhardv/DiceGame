@@ -47,6 +47,7 @@ const GamePlay = () => {
                     score={score}
                 ></TotalScore>
                 <NumberSelector
+                    setError = {setError}
                     error={error}
                     selectedNumber={selectedNumber}
                     setSelectedNumber={setSelectedNumber}
