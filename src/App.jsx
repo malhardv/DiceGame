@@ -4,6 +4,7 @@ import styled from "styled-components"
 import StartGame from './Components/StartGame'
 import GamePlay from './Components/GamePlay/GamePlay'
 
+
 function App() {
 
   const [isGameStarted, setIsGameStarted] = useState(true);

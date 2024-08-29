@@ -4,6 +4,7 @@ import TotalScore from './TotalScore';
 import NumberSelector from './NumberSelector';
 import RollDice from './RollDice';
 import { Button, CustomButton } from '../../Styled/Button';
+import Rules from '../Rules';
 
 
 const GamePlay = () => {
@@ -11,6 +12,7 @@ const GamePlay = () => {
     const [selectedNumber, setSelectedNumber] = useState();
     const [currentDice, setCurrentDice] = useState(1);
     const [error, setError] = useState("");
+    const [showRules, setShowRules] = useState(false)
 
     const generateRandomNumber = (min, max) => {
         return Math.floor(Math.random() * (max - min) + min);
@@ -58,8 +60,11 @@ const GamePlay = () => {
             </div>
             <div className='buttons'>
                 <Button>Reset Score</Button>
-                <CustomButton>Show Rules</CustomButton>
+                <CustomButton
+                onClick={() => setShowRules((prev) => !prev)}
+                >{showRules ? "Hide" : "Show"} Rules</CustomButton>
             </div>
+            {showRules && <Rules></Rules>}
         </MainContainer>
     )
 }

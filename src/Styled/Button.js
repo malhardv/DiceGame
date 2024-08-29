@@ -20,7 +20,7 @@ export const Button = styled.button`
 
 export const CustomButton = styled(Button)`
   color: white;
-  background-color: blackg;
+  background-color: black;
   &:hover {
     background-color: white;
     color: black;
