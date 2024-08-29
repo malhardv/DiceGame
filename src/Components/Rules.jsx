@@ -7,6 +7,9 @@ const Rules = () => {
         <h2>
          How to play?
         </h2>
+        <p>
+            hello
+        </p>
     </RuleBook>
   )
 }
